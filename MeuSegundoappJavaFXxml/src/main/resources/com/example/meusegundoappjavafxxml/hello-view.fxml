@@ -13,7 +13,7 @@
 
     <TextField fx:id="textNome" prefWidth="100" prefHeight="30"></TextField>
 
-    <Button fx:id="btnOK" text="Ok"></Button>
+    <Button fx:id="btnOK" text="Ok" onMouseClicked="#onButtonClicked"></Button>
 
     <Label fx:id="lblMensagem"></Label>
 

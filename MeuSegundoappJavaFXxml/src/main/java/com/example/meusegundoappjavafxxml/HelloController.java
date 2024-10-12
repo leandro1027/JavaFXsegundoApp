@@ -2,13 +2,18 @@ package com.example.meusegundoappjavafxxml;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
+    private Label lblMensagem;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private TextField textNome;
+
+    @FXML
+    protected void onButtonClicked() {
+        lblMensagem.setText("Olá "+ textNome.getText());
     }
+
 }
